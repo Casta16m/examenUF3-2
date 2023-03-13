@@ -1,12 +1,12 @@
 export class monstres {
-    id!: number;
+    index!: number;
     name!: string;
     size!: string;
     type!: string;
     subtype!: string;
 
-    constructor(id: number, name: string, size: string, type: string, subtype: string) {
-        this.id = id;
+    constructor(index: number, name: string, size: string, type: string, subtype: string) {
+        this.index = index;
         this.name = name;
         this.size = size;
         this.type = type;

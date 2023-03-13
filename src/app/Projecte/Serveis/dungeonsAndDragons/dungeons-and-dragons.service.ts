@@ -12,4 +12,8 @@ export class DungeonsAndDragonsService {
   getMonstres(): Observable<any> {
     return this.http.get("https://www.dnd5eapi.co/api/monsters");
   }
+
+  getImatgesMonstres(index: string): Observable<any> {
+    return this.http.get("https://www.dnd5eapi.co/api/monsters/" + index + "/images");
+  }
 }

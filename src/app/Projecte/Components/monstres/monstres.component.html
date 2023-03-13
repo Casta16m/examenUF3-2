@@ -1,1 +1,17 @@
-<p>monstres works!</p>
+<button>Veure Dades</button>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Acció</th>
+    </tr>
+    <tr *ngFor="let monstre of this.monstres">
+        <td>
+            {{monstre.name}}
+        </td>
+        <td>
+            <img (click)="mostrar(monstre.index)" src="../../../../assets/engranatge.png" alt="engranatge">
+            <input type="checkbox" id="cbox1" value="first_checkbox">
+        </td>
+    </tr>
+</table>
